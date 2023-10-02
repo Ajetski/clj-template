@@ -1,3 +1,4 @@
-(ns core
-  (:gen-class))
+(ns core)
+
+(println "Hello, World!")
 
