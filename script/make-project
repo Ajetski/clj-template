@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ -z $1 ]; then
+  echo "Usage: script/make-project <project-name>"
+  exit 1
+fi
+
+cd ..
+cp -r clj-template $1
+cd $1
+rm -rf .git
+git init
+echo "project exists at $(pwd)"
